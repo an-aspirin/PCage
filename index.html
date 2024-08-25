@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">PCage Calculator</h1>
+        <p id="description" class="description">
+            Discover your PCage and compare it with your chronological age to understand how your body is aging.
+        </p>
+        <button id="startButton">Calculate Your PCAge</button>
+
+        <div id="inputSection" class="hidden">
+            <div class="gender-switch">
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" value="45">
+            </div>
+
+            <div class="input-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" value="170">
+            </div>
+
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" value="75">
+            </div>
+
+            <div class="input-group">
+                <label for="MAC">Arm circumference (cm):</label>
+                <input type="number" id="MAC" value="32">
+            </div>
+
+            <div class="input-group">
+                <label for="TSF">Triceps skinfold (mm):</label>
+                <input type="number" id="TSF" value="18">
+            </div>
+
+            <div class="input-group">
+                <label for="SSF">Subscapular skinfold (mm):</label>
+                <input type="number" id="SSF" value="20">
+            </div>
+
+            <div class="input-group">
+                <label for="THC">Thigh circumference (cm):</label>
+                <input type="number" id="THC" value="52">
+            </div>
+
+            <div class="input-group">
+                <label for="CAC">Calf circumference (cm):</label>
+                <input type="number" id="CAC" value="38">
+            </div>
+
+            <div class="input-group">
+                <label for="WC">Waist Circumference (cm):</label>
+                <input type="number" id="WC" value="93">
+            </div>
+
+            <button id="calculateButton">Submit</button>
+        </div>
+
+        <div id="resultSection" class="hidden">
+            <h2>Here are the results: </h2>
+            <p><strong>PCage:</strong> <span id="pcAge"></span></p>
+            <p><strong>∆Age:</strong> <span id="deltaAge"></span></p>
+            <p><strong>Aging Accelerate:</strong> <span id="agingAccelerate"></span></p>
+        </div>
+
+    </div>
+
+    <script src="ageBioDelta.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
