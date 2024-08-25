@@ -70,8 +70,14 @@ button:hover {
     margin-bottom: 20px;
 }
 
-#resultSection {
-    margin-top: 20px;
+#resultSection h1 {
+    margin-top: 15px;
+    margin-bottom: 12px;
     color: #2c3e50;
+}
+
+#resultSection p {
     font-size: 18px;
+    margin-bottom: 5px;
+    color: #081c15;
 }
